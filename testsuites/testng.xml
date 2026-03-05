@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="com.packb.TestComponents.Listeners"></listener>
+    </listeners>
+
+    <test verbose="2"  thread-count="5" preserve-order="true" name="ErrorValTest">
+        <classes>
+            <class name="com.packa.ErrorValTest">
+                <methods>
+                    <include name="Funct1"/>
+                    <include name="Funct2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" thread-count="5" preserve-order="true" name="OperationsTest">
+    <classes>
+            <class name="com.packa.OperationsTest">
+                <methods>
+                    <include name="Func3"/>
+                    <include name="Func4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

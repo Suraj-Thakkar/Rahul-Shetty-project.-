@@ -1,0 +1,21 @@
+package com.packc;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.List;
+
+public class Reader {
+    //convert File to String
+    public List<HashMap<String, String>> retrieveData() throws IOException {
+        String FilePath=FileUtils.readFileToString(new File(System.getProperty("user.dir")+"/src/test/java/com/packc/PurchaseOrder.json"), StandardCharsets.UTF_8);
+        ObjectMapper mapper=new ObjectMapper();
+        List<HashMap<String, String>> data=mapper.readValue(FilePath, new TypeReference<List<HashMap<String, String>>>(){});
+        return data;
+    }
+}
