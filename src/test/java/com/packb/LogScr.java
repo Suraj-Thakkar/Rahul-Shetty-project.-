@@ -43,6 +43,7 @@ public class LogScr extends AbstractClass {
         return prodListScr;
     }
     public String InvCrd(String emailId, String passId ){
+        System.out.println("Delete the statement");
         WaitForElementAppear(EmailTxtFld);
         UserEmail.sendKeys(emailId);
         WaitForElementAppear(PasswordTxtFld);
