@@ -19,7 +19,7 @@ public class OrdSecScr extends AbstractClass{
         super(driver);
     }
     public Boolean webView(String ProductName){
-
+        System.out.println("Sample Statement");
         WaitForElementAppear(OrdHdSec);
         OrdHdBtn.click();
         WaitForAllEleAppear(elementName);
