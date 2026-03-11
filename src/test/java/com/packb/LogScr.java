@@ -57,4 +57,9 @@ public class LogScr extends AbstractClass {
         driver.get("https://rahulshettyacademy.com/client");
 
     }
+    public void DeleteFunc(){
+        System.out.println("Delete the statement");
+        System.out.println("Delete the statement");
+        System.out.println("Delete the statement");
+    }
 }
