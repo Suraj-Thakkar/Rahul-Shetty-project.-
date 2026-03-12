@@ -61,5 +61,7 @@ public class LogScr extends AbstractClass {
         System.out.println("Delete the statement");
         System.out.println("Delete the statement");
         System.out.println("Delete the statement");
+        System.out.println("Delete the statement");
+        System.out.println("Delete the statement");
     }
 }
